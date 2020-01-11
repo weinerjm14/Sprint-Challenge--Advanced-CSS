@@ -125,7 +125,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 table {
@@ -140,16 +140,16 @@ html {
 }
 html,
 body {
-  font-family: 'Ubuntu', sans-serif;
-  color: #5E6164;
+  font-family: "Ubuntu", sans-serif;
+  color: #5e6164;
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: 'Russo One', sans-serif;
-  color: #23293B;
+  font-family: "Russo One", sans-serif;
+  color: #23293b;
 }
 h2 {
   font-size: 3.2rem;
@@ -167,7 +167,7 @@ p {
   margin: 0 auto;
 }
 .nav-content {
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   display: flex;
   flex-direction: column;
   height: 15vh;
@@ -186,6 +186,24 @@ p {
   width: 30%;
   margin-left: 35%;
 }
+@keyframes grow {
+  0% {
+    color: #5e6164;
+    font-size: 1.6rem;
+  }
+  25% {
+    color: #81848e;
+    font-size: 1.4rem;
+  }
+  75% {
+    color: #454a59;
+    font-size: 1.2rem;
+  }
+  100% {
+    color: #454a59;
+    font-size: 1.8rem;
+  }
+}
 @media (max-width: 500px) {
   .nav-content nav {
     width: 90%;
@@ -195,13 +213,16 @@ p {
   }
 }
 .nav-content nav a {
-  color: #454A59;
+  color: #454a59;
   font-size: 1.8rem;
   text-decoration: none;
   font-weight: 700;
 }
+.nav-content nav a:hover {
+  animation: grow 2s;
+}
 footer {
-  color: #22283B;
+  color: #22283b;
   background: #f4f4f4;
   padding: 20px 0;
   border: 1px double #e0e0e0;
@@ -282,33 +303,33 @@ footer {
   margin-bottom: 26px;
 }
 .home .walk .walk-text .btn {
-  background-color: #22283A;
+  background-color: #22283a;
   border-radius: 10%;
   font-size: 1.6rem;
-  color: #F6F7F8;
+  color: #f6f7f8;
   width: 90px;
   height: 35px;
   text-align: center;
   line-height: 35px;
 }
 .home .walk .walk-text .btn:hover {
-  background-color: #F6F7F8;
-  color: #22283A;
+  background-color: #f6f7f8;
+  color: #22283a;
 }
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {
-    background-color: #22283A;
+    background-color: #22283a;
     border-radius: 5%;
     font-size: 1.8rem;
-    color: #F6F7F8;
+    color: #f6f7f8;
     width: 95%;
     height: 50px;
     text-align: center;
     line-height: 50px;
   }
   .home .walk .walk-text .btn:hover {
-    background-color: #F6F7F8;
-    color: #22283A;
+    background-color: #f6f7f8;
+    color: #22283a;
   }
 }
 .home .walk .walk-img {
