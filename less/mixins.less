@@ -1,1 +1,25 @@
 // Mixins Here
+.padding-normal {
+    padding: 15px;
+}
+.full-width {
+    width: 100%;
+}
+.buttons (@bc, @br, @fs, @c, @w, @h, @ta){
+    background-color: @bc;
+    border-radius: @br;
+    font-size: @fs;
+    color: @c;
+    width: @w;
+    height: @h;
+    text-align: @ta;
+    
+    &:hover{
+        background-color: @c;
+        color: @bc;
+        
+        
+    }
+  
+    
+}

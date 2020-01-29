@@ -1,1 +1,55 @@
 // Navigation code here
+.nav-content {
+  background-color: @nav-bg;
+  display: flex;
+  flex-direction: column;
+  height: 15vh;
+  margin-top: 1%;
+  h1 {
+    font-size: 3.8rem;
+    align-items: center;
+    text-align: center;
+    margin: 1%;
+  }
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+    margin-left: 35%;
+    @keyframes grow {
+      0% {
+        color: @shuttle-gray;
+        font-size: 1.6rem;
+      }
+      25% {
+        color: @waterloo;
+        font-size: 1.4rem;
+      }
+      75% {
+        color: @river-bend;
+        font-size: 1.2rem;
+      }
+      100% {
+        color: @nav-font;
+        font-size: 1.8rem;
+      }
+    }
+
+    @media @phone {
+      width: 90%;
+      margin: 0 5%;
+      font-size: 1.4rem;
+      padding-top: 3%;
+    }
+    a {
+      color: @nav-font;
+      font-size: 1.8rem;
+      text-decoration: none;
+      font-weight: 700;
+      &:hover {
+        animation: grow 2s;
+      }
+    }
+  }
+}
